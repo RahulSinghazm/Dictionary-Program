@@ -228,7 +228,7 @@ Output: 1, 2, 3, 4, 5
 
 Input: arr[] = {1, 1, 1, 1, 1}
 Output: 1
-
+</pre>
 
 This problem has existing solution please refer Print All Distinct Elements of a given integer array link. We will solve this problem in python quickly using Ordered Dictionary. Approach is simple,
 
