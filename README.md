@@ -11,6 +11,9 @@ In Python, a Dictionary can be created by placing sequence of elements within cu
 Dictionary can also be created by the built-in function dict(). An empty dictionary can be created by just placing to curly braces{}.
 
 * Note – Dictionary keys are case sensitive, same name but different cases of Key will be treated distinctly.
+
+![dictionary-creation-1](https://user-images.githubusercontent.com/31289155/47039858-7d2fec80-d1a2-11e8-9a01-3d84b7248048.jpg)
+
  
 ## Example:
 <pre>
