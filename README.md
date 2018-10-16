@@ -6,7 +6,7 @@ A Dictionary in Python works similar to the Dictionary in a real world. Keys of 
 * Note – Keys in a dictionary doesn’t allows Polymorphism.
 
 
-                                                      # Creating a Dictionary
+# Creating a Dictionary
 In Python, a Dictionary can be created by placing sequence of elements within curly {} braces, separated by ‘comma’. Dictionary holds a pair of values, one being the Key and the other corresponding pair element being its Key:value. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable.
 
 Dictionary can also be created by the built-in function dict(). An empty dictionary can be created by just placing to curly braces{}.
@@ -88,24 +88,24 @@ Nested Dictionary:
 
 
 
-# Creating an empty Dictionary 
+* Creating an empty Dictionary 
 Dict = {} 
 print("Empty Dictionary: ") 
 print(Dict) 
   
-# Creating a Dictionary  
-# with Integer Keys 
+* Creating a Dictionary  
+* with Integer Keys 
 Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'} 
 print("\nDictionary with the use of Integer Keys: ") 
 print(Dict) 
   
-# Creating a Dictionary  
-# with Mixed keys 
+Creating a Dictionary  
+* with Mixed keys 
 Dict = {'Name': 'Geeks', 1: [1, 2, 3, 4]} 
 print("\nDictionary with the use of Mixed Keys: ") 
 print(Dict) 
   
-# Creating a Dictionary 
+* Creating a Dictionary 
 # with dict() method 
 Dict = dict({1: 'Geeks', 2: 'For', 3:'Geeks'}) 
 print("\nDictionary with the use of dict(): ") 
@@ -141,7 +141,9 @@ Dictionary with the use of dict():
 Dictionary with each item as a pair: 
 {1: 'Geeks', 2: 'For'}
 
-                                          # Nested Dictionary: 
+
+# Nested Dictionary: 
+
 {1: {'B': 'For', 'C': 'Geeks', 'A': 'Geeks'}, 2: {'F': 'Geeks', 'E': 'To', 'D': 'Welcome'}}
 Adding elements to a Dictionary
 In Python Dictionary, Addition of elements can be done in multiple ways. One value at a time can be added to a Dictionary by defining value along with the key e.g. Dict[Key] = ‘Value’. Updating an existing value in a Dictionary can be done by using the built-in update() method. Nested key values can also be added to an existing Dictionary.
