@@ -11,7 +11,7 @@ In Python, a Dictionary can be created by placing sequence of elements within cu
 
 Dictionary can also be created by the built-in function dict(). An empty dictionary can be created by just placing to curly braces{}.
 
-Note – Dictionary keys are case sensitive, same name but different cases of Key will be treated distinctly.Creating a Dictionary
+* Note – Dictionary keys are case sensitive, same name but different cases of Key will be treated distinctly.Creating a Dictionary
 In Python, a Dictionary can be created by placing sequence of elements within curly {} braces, separated by ‘comma’. Dictionary holds a pair of values, one being the Key and the other corresponding pair element being its Key:value. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable.
 
 Dictionary can also be created by the built-in function dict(). An empty dictionary can be created by just placing to curly braces{}.
@@ -27,36 +27,42 @@ Dictionary can also be created by the built-in function dict(). An empty diction
 
 
 
-# Creating an empty Dictionary 
+Creating an empty Dictionary 
+
 Dict = {} 
 print("Empty Dictionary: ") 
 print(Dict) 
   
-# Creating a Dictionary  
-# with Integer Keys 
+Creating a Dictionary
+with Integer Keys 
+
 Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'} 
 print("\nDictionary with the use of Integer Keys: ") 
 print(Dict) 
   
-# Creating a Dictionary  
-# with Mixed keys 
+Creating a Dictionary  
+with Mixed keys 
+
 Dict = {'Name': 'Geeks', 1: [1, 2, 3, 4]} 
 print("\nDictionary with the use of Mixed Keys: ") 
 print(Dict) 
   
-# Creating a Dictionary 
-# with dict() method 
+Creating a Dictionary 
+with dict() method 
+
 Dict = dict({1: 'Geeks', 2: 'For', 3:'Geeks'}) 
 print("\nDictionary with the use of dict(): ") 
 print(Dict) 
   
-# Creating a Dictionary 
-# with each item as a Pair 
+Creating a Dictionary 
+with each item as a Pair
+
 Dict = dict([(1, 'Geeks'), (2, 'For')]) 
 print("\nDictionary with each item as a pair: ") 
 print(Dict) 
   
-# Creating a Nested Dictionary 
+Creating a Nested Dictionary 
+
 Dict = {1: {'A' : 'Geeks', 'B' : 'For', 'C' : 'Geeks'}, 
         2: {'D' : 'Welcome', 'E' : 'To', 'F' : 'Geeks'}} 
 print("\nNested Dictionary: ") 
@@ -64,7 +70,7 @@ print(Dict)
 
 
 # Output:
-
+<pre>
 
 Empty Dictionary: 
 {}
@@ -85,39 +91,42 @@ Nested Dictionary:
 {1: {'B': 'For', 'C': 'Geeks', 'A': 'Geeks'}, 2: {'F': 'Geeks', 'E': 'To', 'D': 'Welcome'}}
 
 
-
-
-
 * Creating an empty Dictionary 
+
 Dict = {} 
 print("Empty Dictionary: ") 
 print(Dict) 
   
 * Creating a Dictionary  
 * with Integer Keys 
+
 Dict = {1: 'Geeks', 2: 'For', 3: 'Geeks'} 
 print("\nDictionary with the use of Integer Keys: ") 
 print(Dict) 
   
-Creating a Dictionary  
-* with Mixed keys 
+* Creating a Dictionary  
+with Mixed keys 
+
 Dict = {'Name': 'Geeks', 1: [1, 2, 3, 4]} 
 print("\nDictionary with the use of Mixed Keys: ") 
 print(Dict) 
   
 * Creating a Dictionary 
-# with dict() method 
+with dict() method 
+
 Dict = dict({1: 'Geeks', 2: 'For', 3:'Geeks'}) 
 print("\nDictionary with the use of dict(): ") 
 print(Dict) 
   
-# Creating a Dictionary 
-# with each item as a Pair 
+* Creating a Dictionary 
+with each item as a Pair
+
 Dict = dict([(1, 'Geeks'), (2, 'For')]) 
 print("\nDictionary with each item as a pair: ") 
 print(Dict) 
   
-# Creating a Nested Dictionary 
+* Creating a Nested Dictionary
+
 Dict = {1: {'A' : 'Geeks', 'B' : 'For', 'C' : 'Geeks'}, 
         2: {'D' : 'Welcome', 'E' : 'To', 'F' : 'Geeks'}} 
 print("\nNested Dictionary: ") 
@@ -142,9 +151,12 @@ Dictionary with each item as a pair:
 {1: 'Geeks', 2: 'For'}
 
 
-# Nested Dictionary: 
+* Nested Dictionary: 
 
-{1: {'B': 'For', 'C': 'Geeks', 'A': 'Geeks'}, 2: {'F': 'Geeks', 'E': 'To', 'D': 'Welcome'}}
-Adding elements to a Dictionary
+{1: {'B': 'For', 'C': 'Geeks', 'A': 'Geeks'}, 2: {'F': 'Geeks', 'E': 'To', 'D': 'Welcome'}}</pre>
+
+
+
+# Adding elements to a Dictionary
 In Python Dictionary, Addition of elements can be done in multiple ways. One value at a time can be added to a Dictionary by defining value along with the key e.g. Dict[Key] = ‘Value’. Updating an existing value in a Dictionary can be done by using the built-in update() method. Nested key values can also be added to an existing Dictionary.
 Note- While adding a value, if the key value already exists, the value gets updated otherwise a new Key with the value is added to the Dictionary.
