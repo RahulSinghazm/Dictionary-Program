@@ -189,8 +189,10 @@ Deleting Entire Dictionary:
 
 
 # Dictionary Methods
-* METHODS               	  DESCRIPTION
+
 <pre>
+* METHODS               	  DESCRIPTION
+
 copy()	                    They copy() method returns a shallow copy of the dictionary.
 clear()	                    The clear() method removes all items from the dictionary.
 get()	                      It is a conventional method to access a value for a key.
