@@ -232,7 +232,7 @@ Output: 1
 
 This problem has existing solution please refer Print All Distinct Elements of a given integer array link. We will solve this problem in python quickly using Ordered Dictionary. Approach is simple,
 
-*Convert array into dictionary data structure using OrderedDict.fromkeys(iterable) function, it converts any iterable into dictionary     having elements as Key in the same order they appeared in array.
+* Convert array into dictionary data structure using OrderedDict.fromkeys(iterable) function, it converts any iterable into dictionary     having elements as Key in the same order they appeared in array.
 * Now iterate through complete dictionary and print keys.
 
 ## Example
