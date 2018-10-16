@@ -25,7 +25,7 @@ Dictionary can also be created by the built-in function dict(). An empty diction
 
 # Example:
 
-
+<pre>
 
 Creating an empty Dictionary 
 
@@ -68,7 +68,7 @@ Dict = {1: {'A' : 'Geeks', 'B' : 'For', 'C' : 'Geeks'},
 print("\nNested Dictionary: ") 
 print(Dict)
 
-
+</pre>
 # Output:
 <pre>
 
@@ -160,3 +160,216 @@ Dictionary with each item as a pair:
 # Adding elements to a Dictionary
 In Python Dictionary, Addition of elements can be done in multiple ways. One value at a time can be added to a Dictionary by defining value along with the key e.g. Dict[Key] = ‘Value’. Updating an existing value in a Dictionary can be done by using the built-in update() method. Nested key values can also be added to an existing Dictionary.
 Note- While adding a value, if the key value already exists, the value gets updated otherwise a new Key with the value is added to the Dictionary.
+
+
+# Example:
+<pre>
+# Creating an empty Dictionary 
+Dict = {} 
+print("Empty Dictionary: ") 
+print(Dict) 
+  
+# Adding elements one at a time 
+Dict[0] = 'Geeks'
+Dict[2] = 'For'
+Dict[3] = 1
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Adding set of values  
+# to a single Key 
+Dict['Value_set'] = 2, 3, 4
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Updating existing Key's Value 
+Dict[2] = 'Welcome'
+print("\nUpdated key value: ") 
+print(Dict) 
+  
+# Adding Nested Key value to Dictionary 
+Dict[5] = {'Nested' :{'1' : 'Life', '2' : 'Geeks'}} 
+print("\nAdding a Nested Key: ") 
+print(Dict)
+</pre>
+
+# Output:
+
+<pre>
+# Creating an empty Dictionary 
+Dict = {} 
+print("Empty Dictionary: ") 
+print(Dict) 
+  
+# Adding elements one at a time 
+Dict[0] = 'Geeks'
+Dict[2] = 'For'
+Dict[3] = 1
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Adding set of values  
+# to a single Key 
+Dict['Value_set'] = 2, 3, 4
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Updating existing Key's Value 
+Dict[2] = 'Welcome'
+print("\nUpdated key value: ") 
+print(Dict) 
+  
+# Adding Nested Key value to Dictionary 
+Dict[5] = {'Nested' :{'1' : 'Life', '2' : 'Geeks'}} 
+print("\nAdding a Nested Key: ") 
+print(Dict) 
+
+# Output:
+<pre>
+Empty Dictionary: 
+{}
+
+Dictionary after adding 3 elements: 
+{0: 'Geeks', 2: 'For', 3: 1}
+
+Dictionary after adding 3 elements: 
+{0: 'Geeks', 2: 'For', 3: 1, 'Value_set': (2, 3, 4)}
+
+Updated key value: 
+{0: 'Geeks', 2: 'Welcome', 3: 1, 'Value_set': (2, 3, 4)}
+
+Adding a Nested Key: 
+{0: 'Geeks', 2: 'Welcome', 3: 1, 5: {'Nested': {'1': 'Life', '2': 'Geeks'}}, 'Value_set': (2, 3, 4)}</pre>
+
+
+
+
+# Creating an empty Dictionary 
+Dict = {} 
+print("Empty Dictionary: ") 
+print(Dict) 
+  
+# Adding elements one at a time 
+Dict[0] = 'Geeks'
+Dict[2] = 'For'
+Dict[3] = 1
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Adding set of values  
+# to a single Key 
+Dict['Value_set'] = 2, 3, 4
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Updating existing Key's Value 
+Dict[2] = 'Welcome'
+print("\nUpdated key value: ") 
+print(Dict) 
+  
+# Adding Nested Key value to Dictionary 
+Dict[5] = {'Nested' :{'1' : 'Life', '2' : 'Geeks'}} 
+print("\nAdding a Nested Key: ") 
+print(Dict) 
+Run on IDE
+
+Output:
+
+Empty Dictionary: 
+{}
+
+Dictionary after adding 3 elements: 
+{0: 'Geeks', 2: 'For', 3: 1}
+
+Dictionary after adding 3 elements: 
+{0: 'Geeks', 2: 'For', 3: 1, 'Value_set': (2, 3, 4)}
+
+Updated key value: 
+{0: 'Geeks', 2: 'Welcome', 3: 1, 'Value_set': (2, 3, 4)}
+
+Adding a Nested Key: 
+{0: 'Geeks', 2: 'Welcome', 3: 1, 5: {'Nested': {'1': 'Life', '2': 'Geeks'}}, 'Value_set': (2, 3, 4)}
+
+
+# Removing Elements from Dictionary
+
+In Python Dictionary, deletion of keys can be done by using the del keyword. Using del keyword, specific values from a dictionary as well as whole dictionary can be deleted. Other functions like pop() and popitem() can also be used for deleting specific values and arbitrary values from a Dictionary. All the items from a dictionary can be deleted at once by using clear() method. Items in a Nested dictionary can also be deleted by using del keyword and providing specific nested key and particular key to be deleted from that nested Dictionary.
+* Note- del Dict will delete the entire dictionary and hence printing it after deletion will raise an Error.
+
+
+# Example:
+
+<pre>
+# Initial Dictionary 
+Dict = { 5 : 'Welcome', 6 : 'To', 7 : 'Geeks', 
+        'A' : {1 : 'Geeks', 2 : 'For', 3 : 'Geeks'}, 
+        'B' : {1 : 'Geeks', 2 : 'Life'}} 
+print("Initial Dictionary: ") 
+print(Dict) 
+  
+# Deleting a Key value 
+del Dict[6] 
+print("\nDeleting a specific key: ") 
+print(Dict) 
+  
+# Deleting a Key from 
+# Nested Dictionary 
+del Dict['A'][2] 
+print("\nDeleting a key from Nested Dictionary: ") 
+print(Dict) 
+  
+# Deleting a Key  
+# using pop() 
+Dict.pop(5) 
+print("\nPopping specific element: ") 
+print(Dict) 
+  
+# Deleting a Key 
+# using popitem() 
+Dict.popitem() 
+print("\nPops first element: ") 
+print(Dict) 
+  
+# Deleting entire Dictionary 
+Dict.clear() 
+print("\nDeleting Entire Dictionary: ") 
+print(Dict) </pre>
+
+
+
+# Output:
+<pre>
+Initial Dictionary: 
+{'A': {1: 'Geeks', 2: 'For', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 5: 'Welcome', 6: 'To', 7: 'Geeks'}
+
+Deleting a specific key: 
+{'A': {1: 'Geeks', 2: 'For', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 5: 'Welcome', 7: 'Geeks'}
+
+Deleting a key from Nested Dictionary: 
+{'A': {1: 'Geeks', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 5: 'Welcome', 7: 'Geeks'}
+
+Popping specific element: 
+{'A': {1: 'Geeks', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 7: 'Geeks'}
+
+Pops first element: 
+{'B': {1: 'Geeks', 2: 'Life'}, 7: 'Geeks'}
+
+Deleting Entire Dictionary: 
+{}</pre>
+
+
+# Dictionary Methods
+* METHODS	                            DESCRIPTION
+
+copy()	                            They copy() method returns a shallow copy of the dictionary.
+clear()                             The clear() method removes all items from the dictionary.
+get()	                              It is a conventional method to access a value for a key.
+dictionary_name.values()            returns a list of all the values available in a given dictionary.
+str()	                              Produces a printable string representation of a dictionary.
+update()	                          Adds dictionary dict2’s key-values pairs to dict
+setdefault()	                      Set dict[key]=default if key is not already in dict
+keys()	                            Returns list of dictionary dict’s keys
+items()	                            Returns a list of dict’s (key, value) tuple pairs
+has_key()	                          Returns true if key in dictionary dict, false otherwise
+fromkeys()	                        Create a new dictionary with keys from seq and values set to value.
+type()	                             Returns the type of the passed variable.
